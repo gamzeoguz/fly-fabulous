@@ -3,6 +3,8 @@ import { Container, Row, Col, Dropdown } from 'react-bootstrap'
 import { useState, useEffect } from 'react'
 import SearchResults from './SearchResults';
 import SearchResults2 from './SearchResults2';
+import { useNavigate } from 'react-router-dom'
+import ListPage from '../pages/ListPage';
 
 function Search() {
   const [query, setQuery] = useState({
@@ -11,6 +13,8 @@ function Search() {
     departDate: "",
     returnDate: ""
   });
+
+  const navigate = useNavigate();
   
   const [queryResults, setQueryResults] = useState([])
   const [queryResults2, setQueryResults2] = useState([])
@@ -46,17 +50,16 @@ function Search() {
   function returnTicket () {
     setButtonClicked(false);
   }
-  
-  const handleSubmit = async (e) => {
-    e.preventDefault();
- 
-  };
+
+  function onSubmit(){
+    navigate('/list')
+  }
   
   return (
     <section className="search">
       <Container>
         <Row className="align-items-center">
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={onSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
                       <input type="text" id="from" placeholder="From" value={query.from} onChange={(e)=>onChange('from', e.target.value)} required />
@@ -93,17 +96,18 @@ function Search() {
                     </Row> 
                     <Row>            
                     <Col size={12} sm={6} className="px-1">
-                      <button className='ticket' onClick={oneWay}>One Way</button>
+                      <button type="button" className='ticket' onClick={oneWay} id="oneway">One Way</button>
                     </Col>
                     <Col>
-                    <button className='ticket' onClick={returnTicket} >Return Ticket</button><br></br>
+                    <button type="button" className='ticket' onClick={returnTicket} id="returnticket" >Return Ticket</button><br></br>
                     </Col>
                     </Row> 
                     <Col size={12} className="px-1">
-                      <button type="submit"><span>Search Flights</span></button>
+                      <button><span>Search Flights</span></button>
                     </Col>
                   </Row>
                 </form>
+                {/*<ListPage query={query} />*/}
                 </Row>
                 </Container>
                 </section>

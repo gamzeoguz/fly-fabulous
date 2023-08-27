@@ -4,67 +4,89 @@
         "id": 0,
         "from": "London",
         "to": "Istanbul",
-        "date": "2023-10-05"
+        "date": "2023-10-05",
+        "time":"9:30am",
+        "price":"80$"
       },
       {
         "id": 1,
         "from": "Istanbul",
         "to": "London",
-        "date": "2023-10-05"
+        "date": "2023-10-05",
+        "time":"9:30am",
+        "price":"100$"
       },
       {
         "id": 2,
         "from": "Austria",
         "to": "London",
-        "date": "2023-10-05"
+        "date": "2023-10-05",
+        "time":"9:30am",
+        "price":"100$"
       },
       {
         "id": 3,
         "from": "London",
         "to": "Austria",
-        "date": "2023-10-05"
+        "date": "2023-10-05",
+        "time":"9:30am",
+        "price":"100$"
       },
       {
         "id": 4,
         "from": "Amsterdam",
         "to": "Austria",
-        "date": "2023-10-05"
+        "date": "2023-10-05",
+        "time":"9:30am",
+        "price":"100$"
       },
       {
         "id": 5,
         "from": "Austria",
         "to": "Amsterdam",
-        "date": "2023-10-05"
+        "date": "2023-10-05",
+        "time":"9:30am",
+        "price":"100$"
       },
       {
         "id": 6,
         "from": "Amsterdam",
         "to": "Zurich",
-        "date": "2023-10-05"
+        "date": "2023-10-05",
+        "time":"9:30am",
+        "price":"100$"
       },
       {
         "id": 7,
         "from": "Zurich",
         "to": "Amsterdam",
-        "date": "2023-10-05"
+        "date": "2023-10-05",
+        "time":"9:30am",
+        "price":"100$"
       },
       {
         "id": 8,
         "from": "Zurich",
         "to": "Paris",
-        "date": "2023-10-05"
+        "date": "2023-10-05",
+        "time":"9:30am",
+        "price":"100$"
       },
       {
         "id": 9,
         "from": "Paris",
         "to": "Zurich",
-        "date": "2023-10-05"
+        "date": "2023-10-05",
+        "time":"9:30am",
+        "price":"100$"
       },
       {
         "id": 10,
         "from": "Paris",
         "to": "Oslo",
-        "date": "2023-10-05"
+        "date": "2023-10-05",
+        "time":"9:30am",
+        "price":"100$"
       }
     ],
     "countries": [
